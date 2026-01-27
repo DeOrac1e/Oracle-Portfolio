@@ -133,11 +133,11 @@ img {
     position: fixed;
     top: var(--header-height);
     right: -100%;
-    width: 80%;
+    width: 50%;
     height: 100%;
     padding: 2rem;
     background-color: var(--second-color);
-    transition: 0.5s;
+    transition: 1s;
   }
 }
 .nav__item {
@@ -247,7 +247,8 @@ img {
 }
 .button:hover {
   box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
+  background-color: var(--second-color);
 }
 
 /* ===== ABOUT =====*/
