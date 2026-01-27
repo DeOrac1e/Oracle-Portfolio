@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="portfolio.css">
-        <script src="script.js"></script>
+        
 
         <!--===============================favicon==============================================-->
 
@@ -242,19 +242,62 @@
 
             <!--======================================= CONTACT ==============================================-->
 
-            <section class="contact section" id="contact">
+            <!-- <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="Message" placeholder="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                    <form action="https://formspree.io/f/mzdrdajn" method="POST" class="contact__form">
+                        <input type="text" placeholder="Name" name="name" class="contact__input">
+                        <input type="mail" placeholder="Email" name="email" class="contact__input">
+                        <textarea name="Message" placeholder="" name="message" id="" cols="0" rows="10" class="contact__input"></textarea>
                         <input type="button" value="Submit" class="contact__button button">
                     </form>
                 </div>
             </section>
-        </main>
+        </main> -->
+
+        <section class="contact section" id="contact">
+  <h2 class="section-title">Contact</h2>
+
+  <div class="contact__container bd-grid">
+    <form 
+      id="contact-form"
+      action="https://formspree.io/f/mzdrdajn"
+      method="POST"
+      class="contact__form"
+    >
+      <input 
+        type="text" 
+        name="name" 
+        placeholder="Name" 
+        class="contact__input"
+        required
+        autocomplete=""
+      >
+
+      <input 
+        type="email" 
+        name="email" 
+        placeholder="Email" 
+        class="contact__input"
+        required
+      >
+
+      <textarea 
+        name="message"
+        placeholder="Your message"
+        rows="10"
+        class="contact__input"
+        required
+      ></textarea>
+
+      <button type="submit" class="contact__button button">
+        Send
+      </button>
+    </form>
+  </div>
+</section>
+
 
         <!--========================================== FOOTER ===============================================-->
 
@@ -277,5 +320,16 @@
         <!--======================================== MAIN JS ===============================================-->
         
         <script src="assets/js/script.js"></script>
+
+        <!--======================================== EMAIL JS ===============================================-->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script> -->
+
+
+<!-- <script>
+  emailjs.init("zG8ninbTmN8WCRMhn");
+</script> -->
+
+<script src="script.js"></script>
+
     </body>
 </html>
